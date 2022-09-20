@@ -1,11 +1,15 @@
 import CPGChart from './components/charts/CPGChart';
+import TotalGoals from './components/charts/TotalGoals';
 import Header from './components/Header';
 
 function App() {
   return (
     <div>
       <Header />
-      <CPGChart />
+      <div className="flex">
+        <CPGChart />
+        <TotalGoals />
+      </div>
     </div>
   );
 }
