@@ -7,7 +7,7 @@ ChartJS.defaults.font.size = 16;
 export default function CPGChart() {
   return (
     <div style={{ width: '500px', height: '500px', textAlign: 'center' }}>
-      <h1>Cost per goal</h1>
+      <h1 className="text-2xl font-medium">Cost per goal</h1>
       <Pie data={data} />
     </div>
   );
@@ -36,16 +36,4 @@ export const data = {
       ],
     },
   ],
-  options: {
-    plugins: {
-      legend: {
-        labels: {
-          color: 'green',
-          font: {
-            size: 20,
-          },
-        },
-      },
-    },
-  },
 };
